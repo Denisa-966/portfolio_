@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add any custom CSS here */
+        .gradient-background {
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+        }
+
+        .gradient-text {
+            background-image: linear-gradient(to right, #3498db, #8e44ad);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans">
+
+    <nav class="bg-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-bold text-xl">MY PROTFOLIO</a>
+            <div>
+                <a href="#home" class="text-white mr-4 hover:text-skyblue">HOME</a>
+                <a href="#about" class="text-white mr-4 hover:text-skyblue">ABOUT</a>
+                <a href="#skills" class="text-white mr-4 hover:text-skyblue">SKILLS</a>
+                <a href="#contact" class="text-white hover:text-skyblue">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="py-20 bg-gradient-background">
+        <div class="container mx-auto text-center">
+            <img src="https://imgs.search.brave.com/LhSad7Y61FwMIxWRg5hhQ1_muhibPkkjZd4c8jHYHY0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzE5LzI2LzQ2/LzM2MF9GXzYxOTI2/NDY4MF94MlBCZEdM/RjU0c0ZlN2tUQnRB/dlpuUHlYZ3ZhUncw/WS5qcGc" alt="User Image" class="rounded-full w-48 h-48 mx-auto mb-8">
+            <h1 class="text-5xl font-bold gradient-text mb-4">DENISA RABDIYYA</h1>
+            <p class="text-2xl text-gray-800 mb-8">Web Developer & Designer</p>
+            <button class="bg-blueviolet text-white py-3 px-6 rounded-lg hover:bg-skyblue">View My Work</button>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-blueviolet mb-8">About Me</h2>
+            <div class="max-w-3xl mx-auto text-gray-800">
+                <p class="mb-6">
+                    I am a passionate and creative web developer.I specialize in building
+                    modern and responsive websites using HTML, CSS, and JavaScript. I am also proficient in various
+                    frameworks and libraries such as React, Angular, and Vue.js.
+                </p>
+                <p>
+                    I am a team player and always eager to learn new technologies. I am also a problem solver and
+                    dedicated to delivering high-quality work.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-skyblue">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-white mb-8">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blueviolet mb-4">WEB DEVLOPMENT</h3>
+                    <ul class="text-gray-800">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JAVASCRIPT</li>
+                        <li>REACT</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blueviolet mb-4">DESIGN</h3>
+                    <ul class="text-gray-800">
+                        <li>UI/UX DESIGN</li>
+                        <li>FIGMA</li>
+                        <li>ADOBE PHOTOSHOP</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blueviolet mb-4">OTHER SKILLS</h3>
+                    <ul class="text-gray-800">
+                        <li>GIT</li>
+                        <li>AGILE METHODOLOGY</li>
+                        <li>PROBLEM SOLVING</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-blueviolet mb-8">Contact Me</h2>
+            <div class="max-w-3xl mx-auto text-gray-800">
+                <p class="mb-6">
+                    Feel free to reach out to me for any inquiries or collaborations.
+                </p>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blueviolet"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blueviolet"
+                            required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                        <textarea id="message" name="message"
+                            class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blueviolet"
+                            rows="5" required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="bg-blueviolet text-white py-3 px-6 rounded-lg hover:bg-skyblue">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-4 text-center">
+        <p class="text-white">&copy; 2025 DENISA RABADIYA</p>
+    </footer>
+
+</body>
+
+</html>
